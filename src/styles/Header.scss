@@ -1,0 +1,32 @@
+.menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 35px 60px;
+
+    img {
+        width: 161px;
+    }
+
+
+    li {
+        text-align: right;
+
+        font-Size: 24px;
+        font-Weight: 500;
+        text-decoration: underline;
+        line-height: 34.22;
+        word-Wrap: break-word;
+        margin-left: 60px;
+
+        a {
+            color: #FF6060;
+        }
+    }
+
+
+}

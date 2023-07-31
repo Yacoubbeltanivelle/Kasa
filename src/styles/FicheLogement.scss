@@ -1,0 +1,194 @@
+.bio-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 35px 0 15px 0;
+
+    .infos {
+        width: 80%;
+
+        &__titre {
+
+            h1 {
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%;
+                margin: 0;
+            }
+
+            p {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%;
+                margin-top: 0;
+            }
+        }
+
+        &__tags {
+            color: white;
+            font-size: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 79%;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            &__tag {
+                padding: 5px 30px;
+                background-color: #FF6060;
+                border-radius: 10px;
+                margin: 0 15px 15px 0px;
+            }
+        }
+
+
+    }
+
+    .biographie {
+        display: flex;
+        width: 22%;
+        align-items: flex-end;
+        flex-direction: column;
+
+        &__host {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            h2 {
+                text-align: right;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%;
+                margin: 0 15px;
+            }
+
+            img {
+                width: 74px;
+                height: 74px;
+                flex-shrink: 0;
+                border-radius: 100%;
+            }
+        }
+
+
+        &__note {
+            font-size: 25px;
+
+            i {
+                margin-left: 15px;
+            }
+
+            &__etoile--vide {
+                color: #E3E3E3;
+            }
+        }
+    }
+}
+
+
+.infos-tech {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__collapse {
+        width: 47%;
+        transition: max-height 0.3s ease;
+    }
+}
+
+.equipementsList {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .bio-infos {
+        flex-direction: column;
+        margin: 21px 0px;
+
+        .infos {
+            width: 80%;
+
+            &__titre {
+
+                h1 {
+                    font-size: 4.5vw;
+                    line-height: 90.6%;
+                }
+
+                p {
+                    font-size: 3.5vw;
+                    margin-top: 3vw;
+                }
+
+
+
+            }
+
+            &__tags {
+                font-size: 2.5vw;
+                width: 100%;
+
+                &__tag {
+                    border-radius: 2vw;
+                    padding: 1vw 5vw;
+                }
+
+            }
+
+        }
+
+        .biographie {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            &__host {
+                margin-bottom: 0px;
+
+                h2 {
+                    font-size: 3.5vw;
+                }
+
+                img {
+                    width: 10vw;
+                    height: 10vw;
+                }
+            }
+
+
+            &__note {
+                font-size: 3.5vw;
+
+                i {
+                    margin-right: 1.5vw;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .infos-tech {
+        display: unset;
+        margin: 10px;
+
+        &__collapse {
+            width: 100%;
+            margin-bottom: 5vw;
+
+            .collapse {
+                font-size: 4.5vw;
+            }
+        }
+    }
+
+}

@@ -2,22 +2,21 @@ import '../../styles/Home.scss';
 import imgCouverture from '../../assets/Couverture1.png';
 import { logementList } from '../../datas/logements';
 import { Link } from 'react-router-dom';
+import Banniere from '../../components/Banniere';
+import Carte from '../../components/Carte';
 
 function Home() {
   return (
     <main>
-      <div className="imgCouverture">
-        <h1>Chez vous, partout et ailleurs</h1>
-        <img src={imgCouverture} alt="image de couverture" />
-      </div>
+      <Banniere
+        image={imgCouverture}
+        titre={'Chez vous, partout et ailleurs'}
+      />
 
       <div className="galerie">
         {logementList.map((logements) => (
           <Link to={`/logement/${logements.id}`} key={logements.id}>
-            <figure>
-              <figcaption>{logements.title}</figcaption>
-              <img src={logements.cover} alt={logements.title} />
-            </figure>
+            <Carte titre={logements.title} image={logements.cover} />
           </Link>
         ))}
       </div>

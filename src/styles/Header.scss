@@ -15,11 +15,8 @@
 
     li {
         text-align: right;
-
         font-Size: 24px;
         font-Weight: 500;
-        text-decoration: underline;
-        line-height: 34.22;
         word-Wrap: break-word;
         margin-left: 60px;
 
@@ -29,4 +26,40 @@
     }
 
 
+}
+
+.ligne {
+    text-decoration: underline;
+}
+
+/* Nouvelles règles Pour Tablette si la fenêtre fait 992px de large */
+@media screen and (max-width: 992px) {
+
+    .menu {
+        nav {
+            li {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        margin: 5vw 4vw;
+        height: unset;
+
+        img {
+            width: 34vw;
+        }
+
+        nav {
+
+            li {
+                font-Size: 3vw;
+                margin-left: 7vw;
+            }
+        }
+    }
 }

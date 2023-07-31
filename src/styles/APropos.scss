@@ -1,0 +1,24 @@
+.devises {
+    padding: 50px 87px 0 87px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .devises {
+        padding: 6vw 0 33vw 0;
+    }
+
+    .imgCouvtaille {
+        height: 59vw;
+
+        &::before {
+            background-color: rgba(0, 0, 0, 0.21);
+        }
+    }
+
+
+    .collapse {
+        margin-bottom: 3vw 0vw;
+    }
+
+}

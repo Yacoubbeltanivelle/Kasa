@@ -1,0 +1,74 @@
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 415px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+
+    .banner-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .arrow {
+        position: absolute;
+        cursor: pointer;
+        height: 57%;
+        width: 100px;
+
+        &:hover {
+            background-color: #0000006e;
+            border-radius: 20px;
+        }
+    }
+
+    .arrow_left {
+        left: 10px;
+    }
+
+    .arrow_right {
+        right: 10px;
+    }
+
+    .numeros {
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        color: white;
+        font-weight: bolder;
+    }
+
+    span {
+        display: block;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #banner {
+        border-radius: 8px;
+        height: 64vw;
+        min-height: unset;
+
+        .arrow {
+            width: 6vw;
+        }
+
+        .dots {
+            display: none;
+        }
+    }
+
+
+}

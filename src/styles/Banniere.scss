@@ -1,0 +1,63 @@
+.imgCouverture {
+
+    border-radius: 25px;
+    overflow: hidden;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    h1 {
+        position: absolute;
+        z-index: 2;
+        color: white;
+        text-align: center;
+    }
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* Nouvelles règles Pour Tablette si la fenêtre fait 992px de large */
+@media screen and (max-width: 992px) {
+
+    .imgCouverture {
+        height: 15vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .imgCouverture {
+        height: 30vw;
+        border-radius: 15px;
+        justify-content: flex-start;
+
+        h1 {
+            font-weight: 500;
+            font-size: 6vw;
+            text-align: start;
+            margin: 5vw;
+            word-wrap: break-word;
+            width: 60%;
+        }
+    }
+
+
+}
